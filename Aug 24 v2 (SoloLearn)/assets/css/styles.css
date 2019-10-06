@@ -1,0 +1,371 @@
+html,
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.page-container {
+    height: 100%;
+}
+
+/*NavBar Section*/
+
+.navbar-container {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px 30px;
+    box-sizing: border-box;
+    /*border-bottom: 1px solid #e8e8e8;*/
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 6px 0px #00000017;
+}
+
+@media (max-width: 699px) {
+.navbar-container {
+    padding: 7px 20px;
+}
+}
+
+.logo-container {
+    display: flex;    /*this makes logo center aligned*/
+}
+
+@media (max-width: 699px) {
+.logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+}
+
+.logo-img {
+    height: 15px;
+    padding-left: 0px;
+}
+
+@media (max-width: 699px) {
+.logo-img {
+    margin-left: 0px;
+}
+}
+
+.navbar-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+@media (max-width: 699px) {
+.navbar-nav {
+    display: none;
+}
+}
+
+.nav-item {
+    display: flex; /*this makes links center aligned just like logo I dont know why!!*/
+    margin-left: 40px;
+}
+
+.nav-item.home {
+    margin-left: 0px;
+}
+
+.nav-link {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    color: #b0b2be;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #2692e6;
+}
+
+.navbar-profile {
+    display: flex;
+    margin-left: auto;
+}
+
+.actionbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    height: 100%;
+}
+
+@media (min-width: 700px) {
+.actionbar-container {
+    display: none;
+}
+}
+
+.profile-nav {
+    margin-right: 5px;
+}
+
+.profile-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+}
+
+
+.main-content-container {
+    display: flex;
+    background-color: #f9fafe;
+    height: 100%;
+}
+
+/*My Library Section*/
+
+.mylibrary-container {
+    width: 400px;
+    background-color: #f5f5f5;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e8e8e8;
+}
+
+@media (max-width: 699px) {
+.mylibrary-container {
+    width: 100%;
+}
+}
+
+.mylibrary-scrollable {
+    overflow: scroll;
+}
+
+.mylibrary-heading {
+  background-color: #3659a2;
+  font-size: 14px;
+  color: #fff;
+  /* letter-spacing: 1px; */
+  /*margin-bottom: 16px;*/
+  padding: 24px 48px 24px 45px;
+}
+
+.course-item {
+    display: flex;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    padding: 1.5rem 2.8rem;
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+}
+
+.course-item.active {
+    background-color: rgba(0,0,0, 0.09);
+}
+
+.course-item:hover {
+  background-color: rgba(0,0,0, 0.04);
+}
+
+.course-img {
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.course-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.course-title {
+  
+}
+
+.course-title-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.course-dt {
+    color: rgba(17,17,17,0.6);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.course-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+/*Lessons Section*/
+
+/*.lessons-container {
+    width: 100%;
+    background: #e7e7e7;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 400px;
+}
+
+.lessons-scrollable {
+    width: 100%;
+    overflow: scroll;
+    margin: 60px 40px 20px 40px;
+
+}
+
+.course-heading {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.lessons-deck {
+    padding: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px #00000017;
+    background-color: #ffffff;
+    padding-top: 0px;
+}
+
+.lesson-title {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 22px;
+}
+*/
+
+.lessons-container {
+    width: 100%;
+    background: #e7e7e7;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 400px;
+}
+
+.lessons-scrollable {
+    width: 100%;
+    overflow: scroll;
+
+}
+
+.lessons-deck {
+    margin: 0px;
+    padding: 40px 0px 50px;
+    border-radius: 0px 0px 8px 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px 0px #00000017;
+    background-color: #ffffff;
+}
+
+.course-header {
+    display: flex;
+    margin: 0px;
+    padding: 16px 48px 16px 45px;
+    overflow: hidden;
+    background-color: #3659a2;
+    color: #fff;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.course-heading {
+    display: flex;
+    flex: 1;
+}
+
+.course-estimation {
+    display: flex;
+    margin-left: auto;
+    font-size: 16px;
+    align-items: center;
+}
+
+
+/*Export from Sololearn*/
+
+.lesson-modules {
+    /*padding: 20px 0;*/
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.lesson-modules.odd .lesson {
+    margin: auto;
+}
+
+.lesson-modules .lesson {
+    max-width: 50%;
+    display: inline-block;
+}
+
+/*3*/
+.lesson-circle.completed {
+    background: #5ac355;
+}
+
+.lesson-circle:hover, .lesson-circle.completed {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.lesson-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 56px;
+    background: #8bc34a;
+    margin: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    cursor: pointer;
+    transition: box-shadow ease-in 100ms;
+}
+
+
+.lesson-circle img {
+    margin: 5px;
+    height: 90px;
+    width: 90px;
+    pointer-events: none;
+}
+
+.lesson-modules.even .lesson {
+    max-width: 100%;
+}
+
+
+.lesson-circle.locked {
+    background: #ddd;
+}
+
+
+.lesson-modules span {
+    margin: 10px 0 0;
+    display: block;
+    cursor: pointer;
+}
+
+.lesson-modules.even {
+    float: left;
+    width: 50%;
+}
